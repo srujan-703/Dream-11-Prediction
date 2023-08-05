@@ -1,0 +1,12 @@
+{% extends 'jupyte/base.html' %}
+
+{% block title %}Result Page{% endblock %}
+
+{% block content %}
+<h2>Player Names</h2>
+<ul>
+  {% for name in player_names %}
+    <li>{{ name }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

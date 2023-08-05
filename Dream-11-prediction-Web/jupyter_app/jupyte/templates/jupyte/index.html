@@ -1,0 +1,415 @@
+
+
+{% extends 'jupyte/base.html' %}
+{% block content %}
+
+<head>
+  <title>List of Buttons</title>
+  <style>
+    /* CSS styles */
+    body{
+      background-color: rgb(62, 60, 59);
+    }
+    label{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    h1{
+      color: orange;
+    }
+    .button-list {
+      text-align:center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .button-list button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #divisionsContainer1 {
+      display: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #divisionsContainer2 {
+      display: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #divisionsContainer3{
+      display: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .leftDivision,
+    .rightDivision {
+      display: inline-block;
+      width: 45%;
+      height: 600px;
+      /* background-color: lightgray; */
+      margin: 10px;
+    }
+    .leftDivision h1, .rightDivision h1 {
+  text-align: center;
+}
+
+.leftDivision label, .rightDivision label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.leftDivision input, .rightDivision input {
+  margin-right: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="button-list">
+    <!-- <button id="toggleButton1">Button 1</button> -->
+  <div id="divisionsContainer1">
+    <div class="leftDivision">
+      <!-- Content for the left division -->
+      <h1>d3</h1>
+      <form method="post" action="{% url 'jupyte:process_players' %}?submitted">
+
+
+        {% csrf_token %}
+        <label for="player1">Player 1:</label>
+        <input type="checkbox" name="player1" id="player1" ><br>
+      
+         <label for="player2">Player 2:</label>
+        <input type="checkbox" name="player2" id="player2" ><br>
+       
+        <label for="player3">Player 3:</label>
+        <input type="checkbox" name="player3" id="player3" ><br>
+      
+        <label for="player4">Player 4:</label>
+        <input type="checkbox" name="player4" id="player4" ><br>
+        
+        <label for="player5">Player 5:</label>
+        <input type="checkbox" name="player5" id="player5" ><br>
+      
+        <label for="player6">Player 6:</label>
+        <input type="checkbox" name="player6" id="player6" ><br>
+      
+    
+    
+        <label for="player7">Player 7:</label>
+        <input type="checkbox" name="player7" id="player7" ><br>
+      
+        <label for="player8">Player 8:</label>
+        <input type="checkbox" name="player8" id="player8" ><br>
+      
+    
+        <label for="player9">Player 9:</label>
+        <input type="checkbox" name="player9" id="player9" ><br>
+      
+        <label for="player10">Player 10:</label>
+        <input type="checkbox" name="player10" id="player10" ><br>
+      
+        <label for="player11">Player 11:</label>
+        <input type="checkbox" name="player11" id="player11" ><br>
+      
+    </div>
+    <div class="rightDivision">
+      <h1>d3</h1>
+      <!-- Content for the right division -->
+     
+      <label for="player12">Player 12:</label>
+      <input type="checkbox" name="player12" id="player12" ><br>
+    
+      <label for="player13">Player 13:</label>
+      <input type="checkbox" name="player13" id="player13" ><br>
+    
+  
+      <label for="player14">Player 14:</label>
+      <input type="checkbox" name="player14" id="player14" ><br>
+    
+      <label for="player15">Player 15:</label>
+      <input type="checkbox" name="player15" id="player15" ><br>
+    
+      <label for="player16">Player 16:</label>
+      <input type="checkbox" name="player16" id="player16" ><br>
+    
+       <label for="player17">Player 17:</label>
+      <input type="checkbox" name="player17" id="player17" ><br>
+    
+      <label for="player18">Player 18:</label>
+      <input type="checkbox" name="player18" id="player18" ><br>
+    
+      <label for="player19">Player 19:</label>
+      <input type="checkbox" name="player19" id="player19" ><br>
+    
+      <label for="player20">Player 20:</label>
+      <input type="checkbox" name="player20" id="player20" ><br>
+    
+      <label for="player21">Player 21:</label>
+      <input type="checkbox" name="player21" id="player21" ><br>
+    
+      <label for="player22">Player 22:</label>
+      <input type="checkbox" name="player22" id="player22" ><br> 
+     <!-- --> 
+     <br>
+     <button type="submit">Submit</button>   
+    </form>
+  </div>
+</div>
+  <!-- <button id="toggleButton2">Button 2</button> -->
+  <div id="divisionsContainer2">
+    
+    <form method="post" action="{% url 'jupyte:process_players' %}?submitted">
+    <div class="leftDivision">
+      <!-- Content for the left division -->
+      <h1>d3</h1>
+
+
+        {% csrf_token %}
+        <label for="player1">Player 1:</label>
+        <input type="checkbox" name="player1" id="player1" ><br>
+      
+         <label for="player2">Player 2:</label>
+        <input type="checkbox" name="player2" id="player2" ><br>
+       
+        <label for="player3">Player 3:</label>
+        <input type="checkbox" name="player3" id="player3" ><br>
+      
+        <label for="player4">Player 4:</label>
+        <input type="checkbox" name="player4" id="player4" ><br>
+        
+        <label for="player5">Player 5:</label>
+        <input type="checkbox" name="player5" id="player5" ><br>
+      
+        <label for="player6">Player 6:</label>
+        <input type="checkbox" name="player6" id="player6" ><br>
+      
+    
+    
+        <label for="player7">Player 7:</label>
+        <input type="checkbox" name="player7" id="player7" ><br>
+      
+        <label for="player8">Player 8:</label>
+        <input type="checkbox" name="player8" id="player8" ><br>
+      
+    
+        <label for="player9">Player 9:</label>
+        <input type="checkbox" name="player9" id="player9" ><br>
+      
+        <label for="player10">Player 10:</label>
+        <input type="checkbox" name="player10" id="player10" ><br>
+      
+        <label for="player11">Player 11:</label>
+        <input type="checkbox" name="player11" id="player11" ><br>
+      
+    </div>
+    <div class="rightDivision">
+      <h1>d3</h1>
+      <!-- Content for the right division -->
+     
+      <label for="player12">Player 12:</label>
+      <input type="checkbox" name="player12" id="player12" ><br>
+    
+      <label for="player13">Player 13:</label>
+      <input type="checkbox" name="player13" id="player13" ><br>
+    
+  
+      <label for="player14">Player 14:</label>
+      <input type="checkbox" name="player14" id="player14" ><br>
+    
+      <label for="player15">Player 15:</label>
+      <input type="checkbox" name="player15" id="player15" ><br>
+    
+      <label for="player16">Player 16:</label>
+      <input type="checkbox" name="player16" id="player16" ><br>
+    
+       <label for="player17">Player 17:</label>
+      <input type="checkbox" name="player17" id="player17" ><br>
+    
+      <label for="player18">Player 18:</label>
+      <input type="checkbox" name="player18" id="player18" ><br>
+    
+      <label for="player19">Player 19:</label>
+      <input type="checkbox" name="player19" id="player19" ><br>
+    
+      <label for="player20">Player 20:</label>
+      <input type="checkbox" name="player20" id="player20" ><br>
+    
+      <label for="player21">Player 21:</label>
+      <input type="checkbox" name="player21" id="player21" ><br>
+    
+      <label for="player22">Player 22:</label>
+      <input type="checkbox" name="player22" id="player22" ><br> 
+     <!-- --> 
+      <br>
+     
+    
+    </div>
+    <button type="submit">Submit</button>   
+  </form>
+    
+  </div>
+  <h1>
+    Match:IND vs AUS (TEST)
+  </h1>
+  
+  <button id="toggleButton3">PICK TEAM</button>
+ 
+  <form method="post" action="{% url 'jupyte:process_players' %}?submitted">
+    {% csrf_token %}
+  <div id="divisionsContainer3">
+   
+    <div class="leftDivision">
+      <!-- Content for the left division -->
+      <br>
+      <h1>India</h1>
+        <label for="player1">RG SHARMA:</label>
+        <input type="checkbox" name="player1" id="player1" value="RG SHARMA" ><br>
+        
+         <label for="player2">VIRAT KOHLI:</label>
+        <input type="checkbox"  id="player2" value="VIRAT KOHLI"  name="player2" ><br>
+       
+         <label for="player3">SHIKAR DHAWAN:</label>
+        <input type="checkbox" name="player3" id="player3" value="SHIKAR DHAWAN" ><br>
+      
+        <label for="player4">KL RAHUL:</label>
+        <input type="checkbox" name="player4" value="KL RAHUL" id="player4" ><br>
+        
+        <label for="player5">RISHABH PANT:</label>
+        <input type="checkbox" name="player5" id="player5" value="RISHABH PANT" ><br>
+        
+        <label for="player6">R ASHWIN:</label>
+        <input type="checkbox" name="player6" id="player6"  value="R ASHWIN" ><br>
+      
+    
+    
+        <label for="player7">RA JADEJA:</label>
+        <input type="checkbox" name="player7" id="player7"value="RA JADEJA"  ><br>
+      
+        <label for="player8">JJ BUMRAH:</label>
+        <input type="checkbox" name="player8" id="player8" value="JJ BUMRAH" ><br>
+      
+    
+        <label for="player9">MOHAMMED SHAMI:</label>
+        <input type="checkbox" name="player9" id="player9"value= "MOHAMMED SHAMI" ><br>
+      
+        <label for="player10">B KUMAR:</label>
+        <input type="checkbox" name="player10" id="player10"value="B KUMAR"  ><br>
+      
+        <label for="player11">MS DHONI:</label>
+        <input type="checkbox" name="player11" id="player11"value="MS DHONI" required ><br>
+        <label for="player12">SR TENDULKAR:</label>
+        <input type="checkbox" name="player12" id="player12" value="SR Tendulkar" ><br>
+        <label for="player13">VIRENDAR SEHWAG:</label>
+        <input type="checkbox" name="player12" id="player12" value="VIRENDAR SEHWAG" ><br>
+       
+    </div>
+    <div class="rightDivision">
+      <h1>Australia</h1>
+     
+      <!-- Content for the right division -->
+     
+      <label for="player14">AT CAREY:</label>
+      <input type="checkbox" name="player14" id="player14" value="AT CAREY" required ><br>
+     
+      <label for="player15">DA WARNER:</label>
+      <input type="checkbox" name="player15" id="player15"value="DA WARNER"  ><br>
+    
+  
+      <label for="player16">UT KHAWAJA:</label>
+      <input type="checkbox" name="player16" id="player16" value="UT KHAWAJA" ><br>
+    
+      <label for="player17">SPD SMITH:</label>
+      <input type="checkbox" name="player17" id="player17"value="SPD SMITH"  ><br>
+    
+      <label for="player18">M LABUSCHAGNE:</label>
+      <input type="checkbox" name="player18" id="player18" value="M LABUSCHAGNE" ><br>
+    
+       <label for="player19">TM HEAD:</label>
+      <input type="checkbox" name="player19" id="player19"value="TM HEAD"  ><br>
+    
+      <label for="player20">NM LYON:</label>
+      <input type="checkbox" name="player20" id="player20"value="NM LYON"  ><br>
+      <label for="player21">JR HAZLEWOOD:</label>
+      <input type="checkbox" name="player21" id="player21"value="JR HAZLEWOOD"  ><br>
+    
+      <label for="player22">PJ CUMMINS:</label>
+      <input type="checkbox" name="player22" id="player22" value="PJ CUMMINS" ><br>
+    
+      <label for="player23">MA  <br>STARC:</label>
+      <input type="checkbox" name="player23" id="player23"value="MA STARC"  ><br>
+    
+      <label for="player24">MG JOHNSON:</label>
+      <input type="checkbox" name="player24" id="player24"value="MG JOHNSON"  ><br> 
+     
+      <label for="player25">RICKY PONTING :</label>
+      <input type="checkbox" name="player25" id="player25"value="RICKY PONTING"  ><br> 
+     
+      <label for="player26">ADAM GILCHRIST:</label>
+      <input type="checkbox" name="player26" id="player26"value="ADAM GILCHRIST"  ><br> <br> 
+     
+    
+
+     
+    
+    </div>
+    <button type="submit" style="margin-left: 200px;">Submit</button>   
+    </form>
+    <!-- <h1>Our Tool takes minimum 30 sec to find the Dream 11 team,<br>So be Patient</h1> -->
+  </div>
+ 
+</div>
+
+  
+
+
+
+   
+   
+
+  <script>
+  // var button1 = document.getElementById('toggleButton1');
+  // var divisionsContainer1 = document.getElementById('divisionsContainer1');
+
+  // button1.addEventListener('click', function() {
+  //   if (divisionsContainer1.style.display === 'none') {
+  //     divisionsContainer1.style.display = 'block';
+  //   } else {
+  //     divisionsContainer1.style.display = 'none';
+  //   }
+  // });
+
+  // var button2 = document.getElementById('toggleButton2');
+  // var divisionsContainer2 = document.getElementById('divisionsContainer2');
+
+  // button2.addEventListener('click', function() {
+  //   if (divisionsContainer2.style.display === 'none') {
+  //     divisionsContainer2.style.display = 'block';
+  //   } else {
+  //     divisionsContainer2.style.display = 'none';
+  //   }
+  // });
+
+  var button3 = document.getElementById('toggleButton3');
+  var divisionsContainer3 = document.getElementById('divisionsContainer3');
+
+  button3.addEventListener('click', function() {
+    if (divisionsContainer3.style.display === 'none') {
+      divisionsContainer3.style.display = 'block';
+    } else {
+      divisionsContainer3.style.display = 'none';
+    }
+  });
+</script>
+
+ </body>
+  {% endblock %}

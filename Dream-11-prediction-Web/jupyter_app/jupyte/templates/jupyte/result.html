@@ -1,0 +1,69 @@
+{% extends 'jupyte/base.html' %}
+
+{% block title %}Result Page{% endblock %}
+
+{% block content %}
+<head>
+   
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(62, 60, 59);
+      color: aliceblue;
+
+     
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #da7a46;
+    }
+
+    .uu{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item {
+      padding: 10px;
+      margin: 400px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Player Names and Points</h2>
+<ul class=".uu"style="list-style: none;">
+  <!-- Render the first 23 items -->
+  {% for i in player_names %}
+    {% if forloop.counter < 23 %}
+      <li class="item">{{ i }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<marquee width="80%" direction="right"><h2>Dream 11 Team</h2></marquee>
+<center>
+<ul style="list-style: none;">
+  <!-- Render items starting from the 24th element -->
+ 
+  {% for i in player_names %}
+    {% if forloop.counter > 23 %}
+      <li>{{ i }}</li>
+      <br>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+</center>
+</body>
+{% endblock %}

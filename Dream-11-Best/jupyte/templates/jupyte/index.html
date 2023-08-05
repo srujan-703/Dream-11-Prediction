@@ -1,0 +1,387 @@
+
+
+{% extends 'jupyte/base.html' %}
+{% block content %}
+
+<head>
+  <title>List of Buttons</title>
+  <style>
+    /* CSS styles */
+    body{
+      background-color: rgb(228, 216, 216);
+    }
+    h1{
+      color: orange;
+    }
+    .button-list {
+      text-align:center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .button-list button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #divisionsContainer1 {
+      display: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #divisionsContainer2 {
+      display: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #divisionsContainer3{
+      display: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .leftDivision,
+    .rightDivision {
+      display: inline-block;
+      width: 45%;
+      height: 300px;
+      background-color: lightgray;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-list">
+    <!-- <button id="toggleButton1">Button 1</button> -->
+  <div id="divisionsContainer1">
+    <div class="leftDivision">
+      <!-- Content for the left division -->
+      <h1>d3</h1>
+      <form method="post" action="{% url 'jupyte:process_players' %}?submitted">
+
+
+        {% csrf_token %}
+        <label for="player1">Player 1:</label>
+        <input type="checkbox" name="player1" id="player1" required><br>
+      
+         <label for="player2">Player 2:</label>
+        <input type="checkbox" name="player2" id="player2" required><br>
+       
+        <label for="player3">Player 3:</label>
+        <input type="checkbox" name="player3" id="player3" required><br>
+      
+        <label for="player4">Player 4:</label>
+        <input type="checkbox" name="player4" id="player4" required><br>
+        
+        <label for="player5">Player 5:</label>
+        <input type="checkbox" name="player5" id="player5" required><br>
+      
+        <label for="player6">Player 6:</label>
+        <input type="checkbox" name="player6" id="player6" required><br>
+      
+    
+    
+        <label for="player7">Player 7:</label>
+        <input type="checkbox" name="player7" id="player7" required><br>
+      
+        <label for="player8">Player 8:</label>
+        <input type="checkbox" name="player8" id="player8" required><br>
+      
+    
+        <label for="player9">Player 9:</label>
+        <input type="checkbox" name="player9" id="player9" required><br>
+      
+        <label for="player10">Player 10:</label>
+        <input type="checkbox" name="player10" id="player10" required><br>
+      
+        <label for="player11">Player 11:</label>
+        <input type="checkbox" name="player11" id="player11" required><br>
+      
+    </div>
+    <div class="rightDivision">
+      <h1>d3</h1>
+      <!-- Content for the right division -->
+     
+      <label for="player12">Player 12:</label>
+      <input type="checkbox" name="player12" id="player12" required><br>
+    
+      <label for="player13">Player 13:</label>
+      <input type="checkbox" name="player13" id="player13" required><br>
+    
+  
+      <label for="player14">Player 14:</label>
+      <input type="checkbox" name="player14" id="player14" required><br>
+    
+      <label for="player15">Player 15:</label>
+      <input type="checkbox" name="player15" id="player15" required><br>
+    
+      <label for="player16">Player 16:</label>
+      <input type="checkbox" name="player16" id="player16" required><br>
+    
+       <label for="player17">Player 17:</label>
+      <input type="checkbox" name="player17" id="player17" required><br>
+    
+      <label for="player18">Player 18:</label>
+      <input type="checkbox" name="player18" id="player18" required><br>
+    
+      <label for="player19">Player 19:</label>
+      <input type="checkbox" name="player19" id="player19" required><br>
+    
+      <label for="player20">Player 20:</label>
+      <input type="checkbox" name="player20" id="player20" required><br>
+    
+      <label for="player21">Player 21:</label>
+      <input type="checkbox" name="player21" id="player21" required><br>
+    
+      <label for="player22">Player 22:</label>
+      <input type="checkbox" name="player22" id="player22" required><br> 
+     <!-- --> 
+     <br>
+     <button type="submit">Submit</button>   
+    </form>
+  </div>
+</div>
+  <!-- <button id="toggleButton2">Button 2</button> -->
+  <div id="divisionsContainer2">
+    
+    <form method="post" action="{% url 'jupyte:process_players' %}?submitted">
+    <div class="leftDivision">
+      <!-- Content for the left division -->
+      <h1>d3</h1>
+
+
+        {% csrf_token %}
+        <label for="player1">Player 1:</label>
+        <input type="checkbox" name="player1" id="player1" required><br>
+      
+         <label for="player2">Player 2:</label>
+        <input type="checkbox" name="player2" id="player2" required><br>
+       
+        <label for="player3">Player 3:</label>
+        <input type="checkbox" name="player3" id="player3" required><br>
+      
+        <label for="player4">Player 4:</label>
+        <input type="checkbox" name="player4" id="player4" required><br>
+        
+        <label for="player5">Player 5:</label>
+        <input type="checkbox" name="player5" id="player5" required><br>
+      
+        <label for="player6">Player 6:</label>
+        <input type="checkbox" name="player6" id="player6" required><br>
+      
+    
+    
+        <label for="player7">Player 7:</label>
+        <input type="checkbox" name="player7" id="player7" required><br>
+      
+        <label for="player8">Player 8:</label>
+        <input type="checkbox" name="player8" id="player8" required><br>
+      
+    
+        <label for="player9">Player 9:</label>
+        <input type="checkbox" name="player9" id="player9" required><br>
+      
+        <label for="player10">Player 10:</label>
+        <input type="checkbox" name="player10" id="player10" required><br>
+      
+        <label for="player11">Player 11:</label>
+        <input type="checkbox" name="player11" id="player11" required><br>
+      
+    </div>
+    <div class="rightDivision">
+      <h1>d3</h1>
+      <!-- Content for the right division -->
+     
+      <label for="player12">Player 12:</label>
+      <input type="checkbox" name="player12" id="player12" required><br>
+    
+      <label for="player13">Player 13:</label>
+      <input type="checkbox" name="player13" id="player13" required><br>
+    
+  
+      <label for="player14">Player 14:</label>
+      <input type="checkbox" name="player14" id="player14" required><br>
+    
+      <label for="player15">Player 15:</label>
+      <input type="checkbox" name="player15" id="player15" required><br>
+    
+      <label for="player16">Player 16:</label>
+      <input type="checkbox" name="player16" id="player16" required><br>
+    
+       <label for="player17">Player 17:</label>
+      <input type="checkbox" name="player17" id="player17" required><br>
+    
+      <label for="player18">Player 18:</label>
+      <input type="checkbox" name="player18" id="player18" required><br>
+    
+      <label for="player19">Player 19:</label>
+      <input type="checkbox" name="player19" id="player19" required><br>
+    
+      <label for="player20">Player 20:</label>
+      <input type="checkbox" name="player20" id="player20" required><br>
+    
+      <label for="player21">Player 21:</label>
+      <input type="checkbox" name="player21" id="player21" required><br>
+    
+      <label for="player22">Player 22:</label>
+      <input type="checkbox" name="player22" id="player22" required><br> 
+     <!-- --> 
+      <br>
+     
+    
+    </div>
+    <button type="submit">Submit</button>   
+  </form>
+    
+  </div>
+  <h1>
+    Match:IND vs AUS (TEST)
+  </h1>
+  
+  <button id="toggleButton3">PICK TEAM</button>
+
+  <div id="divisionsContainer3">
+    
+    <form method="post" action="{% url 'jupyte:process_players' %}?submitted">
+    <div class="leftDivision">
+      <!-- Content for the left division -->
+      <h1>d3</h1>
+
+
+        {% csrf_token %}
+        <label for="player1">Rohit Sharma:</label>
+        <input type="checkbox" name="player1" id="player1" value="RG Sharma" required><br>
+        
+         <label for="player2">Virat Kohli:</label>
+        <input type="checkbox"  id="player2" value="Virat Kohli"  name="player2" required><br>
+       
+         <label for="player3">Shikhar Dhawan:</label>
+        <input type="checkbox" name="player3" id="player3" value="Shikhar Dhawan" required><br>
+      
+        <label for="player4">KL Rahul:</label>
+        <input type="checkbox" name="player4" value="KL Rahul" id="player4" required><br>
+        
+        <label for="player5">Rishabh Pant:</label>
+        <input type="checkbox" name="player5" id="player5" value="Rishabh Pant" required><br>
+        
+        <label for="player6">R ASHWIN:</label>
+        <input type="checkbox" name="player6" id="player6"  value="R ASHWIN" required><br>
+      
+    
+    
+        <label for="player7">RA JADEJA:</label>
+        <input type="checkbox" name="player7" id="player7"value="RA JADEJA"  required><br>
+      
+        <label for="player8">JJ BUMRAH:</label>
+        <input type="checkbox" name="player8" id="player8" value="JJ BUMRAH" required><br>
+      
+    
+        <label for="player9">MOHAMMED SHAMI:</label>
+        <input type="checkbox" name="player9" id="player9"value= "MOHAMMED SHAMI" required><br>
+      
+        <label for="player10">B KUMAR:</label>
+        <input type="checkbox" name="player10" id="player10"value="B KUMAR"  required><br>
+      
+        <label for="player11">MS DHONI:</label>
+        <input type="checkbox" name="player11" id="player11"value="MS DHONI"  required><br>
+       
+    </div>
+    <div class="rightDivision">
+      <h1>d3</h1>
+      <!-- Content for the right division -->
+     
+      <label for="player12">AT CAREY:</label>
+      <input type="checkbox" name="player12" id="player12" value="AT CAREY"  required><br>
+     
+      <label for="player13">DA WARNER:</label>
+      <input type="checkbox" name="player13" id="player13"value="DA WARNER"  required><br>
+    
+  
+      <label for="player14">UT KHAWAJA:</label>
+      <input type="checkbox" name="player14" id="player14" value="UT KHAWAJA" required><br>
+    
+      <label for="player15">SPD SMITH:</label>
+      <input type="checkbox" name="player15" id="player15"value="SPD SMITH"  required><br>
+    
+      <label for="player16">M LABUSCHAGNE:</label>
+      <input type="checkbox" name="player16" id="player16" value="M LABUSCHAGNE" required><br>
+    
+       <label for="player17">TM HEAD:</label>
+      <input type="checkbox" name="player17" id="player17"value="TM HEAD"  required><br>
+    
+      <label for="player18">NM LYON:</label>
+      <input type="checkbox" name="player18" id="player18"value="NM LYON"  required><br>
+      <label for="player19">JR HAZLEWOOD:</label>
+      <input type="checkbox" name="player19" id="player19"value="JR HAZLEWOOD"  required><br>
+    
+      <label for="player20">PJ CUMMINS:</label>
+      <input type="checkbox" name="player20" id="player20" value="PJ CUMMINS" required><br>
+    
+      <label for="player21">MA STARC:</label>
+      <input type="checkbox" name="player21" id="player21"value="MA STARC"  required><br>
+    
+      <label for="player22">MG JOHNSON:</label>
+      <input type="checkbox" name="player22" id="player22"value="MG JOHNSON"  required><br> 
+     
+     <br>
+     
+    
+    </div>
+    <button type="submit">Submit</button>   
+    </form>
+  </div>
+  <h1>Our Tool takes minimum 30 sec to find the Dream 11 team,<br>So be Patient</h1>
+</div>
+
+  
+
+
+
+   
+   
+
+  <script>
+  // var button1 = document.getElementById('toggleButton1');
+  // var divisionsContainer1 = document.getElementById('divisionsContainer1');
+
+  // button1.addEventListener('click', function() {
+  //   if (divisionsContainer1.style.display === 'none') {
+  //     divisionsContainer1.style.display = 'block';
+  //   } else {
+  //     divisionsContainer1.style.display = 'none';
+  //   }
+  // });
+
+  // var button2 = document.getElementById('toggleButton2');
+  // var divisionsContainer2 = document.getElementById('divisionsContainer2');
+
+  // button2.addEventListener('click', function() {
+  //   if (divisionsContainer2.style.display === 'none') {
+  //     divisionsContainer2.style.display = 'block';
+  //   } else {
+  //     divisionsContainer2.style.display = 'none';
+  //   }
+  // });
+
+  var button3 = document.getElementById('toggleButton3');
+  var divisionsContainer3 = document.getElementById('divisionsContainer3');
+
+  button3.addEventListener('click', function() {
+    if (divisionsContainer3.style.display === 'none') {
+      divisionsContainer3.style.display = 'block';
+    } else {
+      divisionsContainer3.style.display = 'none';
+    }
+  });
+</script>
+
+ </body>
+  {% endblock %}
